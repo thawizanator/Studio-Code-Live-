@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://c6j05q5j4dlu5"]
+
+[ext_resource type="Script" uid="uid://bjyf2x5edw77c" path="res://splash_screen.gd" id="1_el3v4"]
+[ext_resource type="Texture2D" uid="uid://m8swbq178b71" path="res://resources/img/splash_screen.png" id="1_ty3ja"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_el3v4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_el3v4"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 0.5882353)
+shadow_size = 5
+shadow_offset = Vector2(2, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_arguk"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.11716049, 0.11716048, 0.11716049, 1)
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+shadow_size = 3
+shadow_offset = Vector2(0.7, 0.7)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74eti"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 0.5882353)
+shadow_size = 5
+shadow_offset = Vector2(2, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8bb4"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+shadow_size = 3
+shadow_offset = Vector2(0.7, 0.7)
+
+[node name="SplashScreen" type="Control" unique_id=124026643]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_el3v4")
+
+[node name="SplashScreenBG" type="TextureRect" parent="." unique_id=1739239845]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ty3ja")
+expand_mode = 3
+
+[node name="VersionNumber" type="Label" parent="." unique_id=1578369758]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LogWindow" type="PanelContainer" parent="." unique_id=1709160016]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = 0.99
+anchor_right = 0.51
+anchor_bottom = 1.0
+offset_left = -329.0
+offset_top = -55.0
+offset_right = 329.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_el3v4")
+
+[node name="LogPadding" type="MarginContainer" parent="LogWindow" unique_id=920205304]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="LogScroller" type="ScrollContainer" parent="LogWindow/LogPadding" unique_id=1920891991]
+layout_mode = 2
+horizontal_scroll_mode = 3
+
+[node name="ConsoleLog" type="RichTextLabel" parent="LogWindow/LogPadding/LogScroller" unique_id=1771574446]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+bbcode_enabled = true
+scroll_following = true
+
+[node name="DisclaimerPopup" type="Window" parent="." unique_id=1045746740]
+oversampling_override = 1.0
+title = "Disclaimer Notice"
+initial_position = 1
+size = Vector2i(550, 350)
+visible = false
+
+[node name="PanelContainer" type="PanelContainer" parent="DisclaimerPopup" unique_id=2017484664]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="DisclaimerPopup/PanelContainer" unique_id=1379203881]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DisclaimerPopup/PanelContainer/MarginContainer" unique_id=1568062122]
+layout_mode = 2
+alignment = 2
+
+[node name="DisclaimerText" type="RichTextLabel" parent="DisclaimerPopup/PanelContainer/MarginContainer/VBoxContainer" unique_id=572970310]
+custom_minimum_size = Vector2(500, 250)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DisclaimerPopup/PanelContainer/MarginContainer/VBoxContainer" unique_id=33766746]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="AcknowledgeBtn" type="Button" parent="DisclaimerPopup/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=2007356401]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_el3v4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_arguk")
+text = "Acknowledge"
+
+[node name="CloseBtn" type="Button" parent="DisclaimerPopup/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=268806963]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_74eti")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r8bb4")
+text = "Close"

@@ -1,6 +1,6 @@
-# Studio Code Live!
-Studio Code Live is an interactive, high-production asymmetric party game ecosystem designed specifically for live streamers to act as televised game show hosts with their communities. Drawing heavy inspiration from the vibrant, neon-soaked nostalgia of late-80s and early-90s network television , this project bridges the gap between desktop gaming clients and real-time audience interaction panels.
-
+<p align="center">
+    <img height="300" alt="Studio Code Live!" src="https://github.com/user-attachments/assets/0ec2178a-9b56-491e-9262-8d181db8bcea" />
+</p>
 [![Engine](https://img.shields.io/badge/Engine-Godot_4.6+-blueviolet?style=for-the-badge&logo=godot-engine&logoColor=white)](https://godotengine.org)
 [![Backend](https://img.shields.io/badge/Backend-Node.js_&_Socket.io-green?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Style](https://img.shields.io/badge/Aesthetic-1980s_Neon_Retro-ff69b4?style=for-the-badge)](https://en.wikipedia.org/wiki/Synthwave)
@@ -43,11 +43,7 @@ A high-performance **Node.js & Socket.io** backend server that handles data aggr
 
 ## 🎮 Included Mini-Games
 
-### 🟩 1. The Neon Grid (Team Trivia)
-A classic 3x3 grid-bound match where the host selects a grid tile and broadcasts a live question. Viewer web browsers automatically adapt into multi-choice selection pads (A, B, C, D) themed to their faction. When time expires, the server calculates aggregate data, assesses team accuracy ratings, and repaints the grid tile permanently on stream into the winning faction's neon color.
-
-### 💰 2. Bidding War (Numeric Precision)
-A numeric data-gathering game following classic television game show mechanics. The host inputs a custom trivia item and target answer directly inside their dashboard console. The audience has 30 seconds to type their precise numeric guess into their phone controllers. The central backend processes variances, filters duplicates, and crowns the closest player without going over.
+### Soon to come once the base has been built
 
 ---
 
@@ -78,3 +74,13 @@ Go to Project Settings -> Application -> Run and ensure your main run target sce
 Press F5 to start.
 
 Pass through the diagnostic disclaimer screen and press Spacebar to enter the master title layout.
+
+Your GitHub README document for **Studio Code Live** has been successfully generated. It includes a custom 1980s-inspired retro ASCII text logo at the absolute top, a comprehensive architectural breakdown, documented key features, and development instructions matching your project's history.
+
+[file-tag: code-generated-file-0-1783400964073933986]
+
+### Document Highlights:
+* **Thematic Branding:** Includes the custom retro logo at the top with badges indicating your build stack (**Godot 4.6+**, **Node.js**, **Socket.io**)[cite: 4008, 4011, 4015].
+* **Core Architecture Sections:** Clean sections detailing the structural splits between the Broadcast Studio Booth, Live Studio Audience web portal, and the Switchboard real-time server[cite: 4011, 4014, 4015].
+* **Feature Set Mapping:** Documents your automated team allocations (**Neon Retro Cats vs. Cyber Laser Sharks**), profile management, and included mini-games (*The Neon Grid* and *Bidding War*)[cite: 4017, 4019, 4020, 4023].
+* **Safety Integration:** Formally defines the universal nuclear fail-safe key combination (`Shift + H + Numpad 5`) within the quickstart and developer warnings to assist alpha testers[cite: 5211, 5245].

@@ -1,6 +1,7 @@
 <p align="center">
     <img height="300" alt="Studio Code Live!" src="https://github.com/user-attachments/assets/0ec2178a-9b56-491e-9262-8d181db8bcea" />
 </p>
+
 [![Engine](https://img.shields.io/badge/Engine-Godot_4.6+-blueviolet?style=for-the-badge&logo=godot-engine&logoColor=white)](https://godotengine.org)
 [![Backend](https://img.shields.io/badge/Backend-Node.js_&_Socket.io-green?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Style](https://img.shields.io/badge/Aesthetic-1980s_Neon_Retro-ff69b4?style=for-the-badge)](https://en.wikipedia.org/wiki/Synthwave)

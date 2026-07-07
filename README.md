@@ -1,0 +1,2 @@
+# Studio Code Live!
+Studio Code Live is an interactive, high-production asymmetric party game ecosystem designed specifically for live streamers to act as televised game show hosts with their communities. Drawing heavy inspiration from the vibrant, neon-soaked nostalgia of late-80s and early-90s network television , this project bridges the gap between desktop gaming clients and real-time audience interaction panels.

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://c3ft1c3na4mmt"]
+
+[ext_resource type="Script" uid="uid://bni87ouryorh1" path="res://player_screen.gd" id="1_cl4t4"]
+[ext_resource type="Texture2D" uid="uid://cm8p4de6sgr27" path="res://resources/img/player_screen.png" id="2_jilxt"]
+[ext_resource type="Texture2D" uid="uid://tdvnd0cgrotd" path="res://resources/img/playerscreenbtns.png" id="3_wpvd4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dyosu"]
+texture = ExtResource("3_wpvd4")
+region_rect = Rect2(44, 40, 157, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7y20v"]
+texture = ExtResource("3_wpvd4")
+region_rect = Rect2(444, 40, 157, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mcuo2"]
+texture = ExtResource("3_wpvd4")
+region_rect = Rect2(233, 29, 179, 182)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_33q2r"]
+texture = ExtResource("3_wpvd4")
+region_rect = Rect2(644, 40, 157, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6po6"]
+texture = ExtResource("3_wpvd4")
+region_rect = Rect2(233, 29, 179, 182)
+
+[node name="PlayerScreen" type="Control" unique_id=1826783245]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cl4t4")
+
+[node name="PlayerScreenBG" type="TextureRect" parent="." unique_id=693755648]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jilxt")
+expand_mode = 3
+
+[node name="StatusLogLbl" type="Label" parent="." unique_id=1181153988]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -321.0
+offset_top = -347.0
+offset_right = 321.0
+offset_bottom = -324.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "sdfasdfasdfasdfasdfasdfa"
+
+[node name="ConnectionBox" type="VBoxContainer" parent="." unique_id=488379775]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 400.0
+offset_right = 954.0
+offset_bottom = 554.0
+
+[node name="RoomCodeInput" type="LineEdit" parent="ConnectionBox" unique_id=644058114]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ConnectionBox" unique_id=572882236]
+layout_mode = 2
+
+[node name="JoinBtn" type="Button" parent="ConnectionBox/HBoxContainer" unique_id=1061712618]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_dyosu")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7y20v")
+theme_override_styles/hover = SubResource("StyleBoxTexture_mcuo2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_33q2r")
+theme_override_styles/focus = SubResource("StyleBoxTexture_e6po6")
+
+[node name="SettingsBtn" type="Button" parent="ConnectionBox/HBoxContainer" unique_id=10325572]
+layout_mode = 2
+
+[node name="BackBtn" type="Button" parent="ConnectionBox/HBoxContainer" unique_id=1062160031]
+layout_mode = 2
+
+[node name="ExitBtn" type="Button" parent="ConnectionBox/HBoxContainer" unique_id=1218386562]
+layout_mode = 2

@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://b2xm4s10nk0tj"]
 
 [ext_resource type="Texture2D" uid="uid://s1k848fgnllt" path="res://resources/img/title_screenB.png" id="1_ak2if"]
+[ext_resource type="Script" uid="uid://dmwvk85n1xugg" path="res://title_screen.gd" id="1_tpml5"]
 [ext_resource type="Theme" uid="uid://toi5qv4i0fp8" path="res://resources/streamerhostbutton.tres" id="2_ig5kc"]
 [ext_resource type="Theme" uid="uid://dabypvcs8f5nl" path="res://resources/playerbutton.tres" id="3_ig5kc"]
 [ext_resource type="Theme" uid="uid://bmr3cc1wvjsfc" path="res://resources/gamesettingsbutton.tres" id="4_hafda"]
 [ext_resource type="Theme" uid="uid://c40jk4nus7y0b" path="res://resources/exitbutton.tres" id="5_tpml5"]
+[ext_resource type="AudioStream" uid="uid://84yl0d1b3tkt" path="res://resources/sounds/bgloop.wav" id="7_jqemp"]
 
 [node name="TitleScreen" type="Control" unique_id=1703151004]
 layout_mode = 3
@@ -13,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tpml5")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1123686929]
 layout_mode = 1
@@ -37,22 +40,31 @@ offset_bottom = -112.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="StreamerHost" type="Button" parent="ButtonBox" unique_id=640110686]
+[node name="StreamerHostBtn" type="Button" parent="ButtonBox" unique_id=640110686]
 custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 theme = ExtResource("2_ig5kc")
 
-[node name="Player" type="Button" parent="ButtonBox" unique_id=1995163235]
+[node name="PlayerBtn" type="Button" parent="ButtonBox" unique_id=1995163235]
 custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 theme = ExtResource("3_ig5kc")
 
-[node name="GameSettings" type="Button" parent="ButtonBox" unique_id=27419974]
+[node name="GameSettingsBtn" type="Button" parent="ButtonBox" unique_id=27419974]
 custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 theme = ExtResource("4_hafda")
 
-[node name="Exit" type="Button" parent="ButtonBox" unique_id=1322326153]
+[node name="ExitBtn" type="Button" parent="ButtonBox" unique_id=1322326153]
 custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
 theme = ExtResource("5_tpml5")
+
+[node name="OutPutLogLbl" type="Label" parent="." unique_id=94723701]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TitleMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=933791896]
+stream = ExtResource("7_jqemp")
+volume_db = -7.069
